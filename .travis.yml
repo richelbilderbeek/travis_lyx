@@ -1,0 +1,7 @@
+sudo: require
+
+install:
+  - sudo apt-get install lyx
+
+script:
+  - lyx --export pdf travis_lyx.lyx

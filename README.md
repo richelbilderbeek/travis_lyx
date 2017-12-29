@@ -6,6 +6,6 @@
 
 Minimal project that converts a LyX document that is converted to PDF and is tested by Travis CI.
 
-This GitHub is (an unoffical) part of:
+This GitHub is part of:
 
- * [the Travis C++ Tutorial](https://github.com/richelbilderbeek/travis_cpp_tutorial)
+ * [the Travis Tutorial](https://github.com/richelbilderbeek/travis_tutorial)

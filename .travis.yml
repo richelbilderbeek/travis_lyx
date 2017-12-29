@@ -8,5 +8,4 @@ install:
 
 script:
   - lyx --export pdf travis_lyx.lyx
-  # Check if the PDF has been created
   - if [ ! -e travis_lyx.pdf ]; then exit 1; fi

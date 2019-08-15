@@ -1,6 +1,11 @@
-sudo: require
+language: cpp
+dist: bionic
+compiler: gcc
 
-install:
+install: 
+  - sudo apt update -qq
+  # Boost
+  - sudo apt install -qq libboost-all-dev
   # LyX
   - sudo add-apt-repository -y ppa:lyx-devel/release
   - sudo apt-get update -qq

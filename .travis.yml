@@ -1,6 +1,5 @@
 language: cpp
 dist: bionic
-compiler: gcc
 
 install: 
   - sudo apt update -qq
@@ -14,3 +13,12 @@ install:
 script:
   - lyx --export pdf travis_lyx.lyx
   - if [ ! -e travis_lyx.pdf ]; then exit 1; fi
+
+after_success:
+  # Download thesis
+  - wget https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf
+
+after_failure:
+  # Download thesis
+  - wget https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf
+
